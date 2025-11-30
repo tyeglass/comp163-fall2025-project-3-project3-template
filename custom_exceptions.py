@@ -1,3 +1,4 @@
+
 """
 COMP 163 - Project 3: Quest Chronicles
 Custom Exception Definitions
@@ -5,7 +6,7 @@ Custom Exception Definitions
 This module defines all custom exceptions used throughout the game.
 """
 
-# ============================================================================
+# ============================================================================ 
 # BASE GAME EXCEPTIONS
 # ============================================================================
 
@@ -33,7 +34,8 @@ class InventoryError(GameError):
     """Base exception for inventory-related errors"""
     pass
 
-# ============================================================================
+
+# ============================================================================ 
 # SPECIFIC EXCEPTIONS
 # ============================================================================
 
@@ -49,6 +51,7 @@ class MissingDataFileError(DataError):
 class CorruptedDataError(DataError):
     """Raised when data file is corrupted or unreadable"""
     pass
+
 
 # Character Exceptions
 class InvalidCharacterClassError(CharacterError):
@@ -67,6 +70,7 @@ class InsufficientLevelError(CharacterError):
     """Raised when character level is too low for an action"""
     pass
 
+
 # Combat Exceptions
 class InvalidTargetError(CombatError):
     """Raised when trying to target an invalid enemy"""
@@ -79,6 +83,7 @@ class CombatNotActiveError(CombatError):
 class AbilityOnCooldownError(CombatError):
     """Raised when trying to use an ability that's on cooldown"""
     pass
+
 
 # Quest Exceptions
 class QuestNotFoundError(QuestError):
@@ -97,6 +102,7 @@ class QuestNotActiveError(QuestError):
     """Raised when trying to complete a quest that isn't active"""
     pass
 
+
 # Inventory Exceptions
 class InventoryFullError(InventoryError):
     """Raised when trying to add items to a full inventory"""
@@ -114,6 +120,7 @@ class InvalidItemTypeError(InventoryError):
     """Raised when item type is not recognized"""
     pass
 
+
 # Save/Load Exceptions
 class SaveFileCorruptedError(GameError):
     """Raised when save file cannot be loaded due to corruption"""
@@ -122,4 +129,3 @@ class SaveFileCorruptedError(GameError):
 class InvalidSaveDataError(GameError):
     """Raised when save file contains invalid data"""
     pass
-
